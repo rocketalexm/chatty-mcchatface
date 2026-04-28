@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chatty McChatface
 
-## Getting Started
+An ultra-minimalist, Apple-inspired web interface for interacting with Large Language Models (LLMs) hosted on your local network.
 
-First, run the development server:
+Chatty McChatface decouples the user interface from the model hosting, allowing you to run heavy models on a powerful desktop/server while interacting with them via a lightweight, responsive web client. The focus is on "Zen" productivity—removing all cognitive friction and technical noise from the chat experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features (MVP)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Minimalist UI:** High whitespace, glassmorphism effects, and a "Zen" empty state.
+- **Multi-thread History:** Manage multiple conversations stored locally in your browser.
+- **Auto-Naming:** Conversations are automatically titled based on their content.
+- **Streaming Responses:** Real-time token streaming for a smooth, natural chat experience.
+- **Local Connectivity:** Designed to connect to local LLM servers like [LM Studio](https://lmstudio.ai/) or MLX via your local network.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Optimized for [Vercel](https://vercel.com/)
 
-## Learn More
+## 📋 Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+Before running the project, ensure you have:
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
+- [npm](https://www.npmjs.com/) or `yarn`
+- A local LLM server running (e.g., **LM Studio** in "Local Server" mode) on your network.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Setup & Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rocketalexm/chatty-mcchatface.git
+   cd chatty-mcchatface
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Configure Environment Variables:**
+   Create a `.env.local` file in the root directory and add your local server's IP address:
+   ```env
+   NEXT_PUBLIC_LLM_SERVER_URL=http://<YOUR_LOCAL_IP>:1234/v1
+   ```
+   *Note: Replace `<YOUR_LOCAL_IP>` with the actual IP address of the machine running LM Studio.*
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the app:**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🌐 Connecting to LM Studio
+
+To use the MVP with LM Studio:
+1. Open **LM Studio**.
+2. Go to the **Local Server** tab.
+3. Select a model and click **Start Server**.
+4. Ensure the server is listening on `0.0.0.0` (to allow connections from other devices on your network) rather than just `localhost`.
+5. Verify the port (default is `1234`) matches your `.env.local` configuration.
+
+## 🗺️ Roadmap
+
+- [ ] **v1.5:** Support for MLX Server and a backend toggle.
+- [ ] **v2:** Native iOS application with automatic network discovery (Bonjour/mDNS).
+- [ ] **v3:** Multimodal inputs (images/files) and user-configurable system prompts.
+
+## 📄 License
+
+This project is intended for personal use and educational purposes.
