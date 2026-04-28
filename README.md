@@ -2,6 +2,8 @@
 
 An ultra-minimalist, Apple-inspired web interface for interacting with Large Language Models (LLMs) hosted on your local network.
 
+> **Note:** This project was built entirely using local Gemma 4 models. No cloud AI was used to generate the PRDs, architecture, or code.
+
 Chatty McChatface decouples the user interface from the model hosting, allowing you to run LLMs on a local computer while interacting with them via a lightweight, responsive web client. The focus is on "Zen" productivity—removing all cognitive friction and technical noise from the chat experience.
 
 ## 🚀 Features (MVP)
