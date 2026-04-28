@@ -71,7 +71,7 @@ Navigate to [http://<YOUR_IP_OR_HOSTNAME>:3000](http://<YOUR_IP_OR_HOSTNAME>:300
 
 - [ ] **v1.5:** Support for MLX Server and a backend toggle.
 - [ ] **v2:** Native iOS application with automatic network discovery (Bonjour/mDNS).
-- [ ] **v3:** Multimodal inputs (images/files) and user-configurable system prompts.
+- [ ] **v3:** Power Update: Multimodal inputs, user-configurable settings, and a native macOS app.
 
 ## 📄 License
 
