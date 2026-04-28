@@ -52,7 +52,17 @@ Before running the project, ensure you have:
    ```
 
 5. **Open the app:**
-   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## 🌐 Connecting to LM Studio
 
