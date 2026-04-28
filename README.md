@@ -53,7 +53,7 @@ Before running the project, ensure you have:
    ```
 
 5. **Open the app:**
-   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
+   Navigate to [http://<YOUR_IP_OR_HOSTNAME>:3000](http://<YOUR_IP_OR_HOSTNAME>:3000) in your browser.
 
 ## 🌐 Connecting to LM Studio
 
