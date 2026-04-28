@@ -40,11 +40,11 @@ Before running the project, ensure you have:
    ```
 
 3. **Configure Environment Variables:**
-   Create a `.env.local` file in the root directory and add your local server's IP address:
+   Create a `.env.local` file in the root directory and add your local server's IP address or hostname:
    ```env
-   NEXT_PUBLIC_LLM_SERVER_URL=http://<YOUR_LOCAL_IP>:1234/v1
+   NEXT_PUBLIC_LLM_SERVER_URL=http://<YOUR_LOCAL_IP_OR_HOSTNAME>:1234/v1
    ```
-   *Note: Replace `<YOUR_LOCAL_IP>` with the actual IP address of the machine running LM Studio.*
+   *Note: Replace `<YOUR_LOCAL_IP_OR_HOSTNAME>` with the actual IP address or hostname (e.g., `machine-name.local`) of the machine running LM Studio.*
 
 4. **Run the development server:**
    ```bash
