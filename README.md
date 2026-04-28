@@ -61,7 +61,7 @@ To use the MVP with LM Studio:
 1. Open **LM Studio**.
 2. Go to the **Local Server** tab.
 3. Select a model and click **Start Server**.
-4. Ensure the server is listening on `0.0.0.0` (to allow connections from other devices on your network) rather than just `localhost`.
+4. In Server Settings, turn on "Serve on Local Network" and "Enable CORS" to allow connections from other devices on your network.
 5. Verify the port (default is `1234`) matches your `.env.local` configuration.
 
 ## 🗺️ Roadmap
