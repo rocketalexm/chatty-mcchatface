@@ -61,8 +61,9 @@ To use the MVP with LM Studio:
 4. In Server Settings, turn on "Serve on Local Network" and "Enable CORS" to allow connections from other devices on your network.
 5. Verify the port (default is `1234`) matches your `.env.local` configuration.
 
-5. **Open the app:**
-   Navigate to [http://<YOUR_IP_OR_HOSTNAME>:3000](http://<YOUR_IP_OR_HOSTNAME>:3000) in your browser.
+## 🚀 Accessing the App
+
+Navigate to [http://<YOUR_IP_OR_HOSTNAME>:3000](http://<YOUR_IP_OR_HOSTNAME>:3000) in your browser.
 
 ## 🗺️ Roadmap
 
