@@ -2,7 +2,7 @@
 
 An ultra-minimalist, Apple-inspired web interface for interacting with Large Language Models (LLMs) hosted on your local network.
 
-Chatty McChatface decouples the user interface from the model hosting, allowing you to run heavy models on a powerful desktop/server while interacting with them via a lightweight, responsive web client. The focus is on "Zen" productivity—removing all cognitive friction and technical noise from the chat experience.
+Chatty McChatface decouples the user interface from the model hosting, allowing you to run LLMs on a powerful desktop/server while interacting with them via a lightweight, responsive web client. The focus is on "Zen" productivity—removing all cognitive friction and technical noise from the chat experience.
 
 ## 🚀 Features (MVP)
 
