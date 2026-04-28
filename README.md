@@ -46,23 +46,14 @@ Before running the project, ensure you have:
    ```
    *Note: Replace `<YOUR_LOCAL_IP_OR_HOSTNAME>` with the actual IP address or hostname (e.g., `machine-name.local`) of the machine running LM Studio.*
 
-4. **Run the development server:**
+4. **Build and Start the application:**
    ```bash
-   npm run dev
+   npm run build
+   npm run start
    ```
 
 5. **Open the app:**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   # or
-   bun dev
-   ```
-
-   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🌐 Connecting to LM Studio
 
