@@ -60,7 +60,11 @@ Expanding backend capabilities while maintaining UI simplicity.
 | **F2.2** | Network Discovery | Implementation of mDNS/Bonjour to find the server automatically, removing reliance on hard-coded IPs. | P1 |
 | **F2.3** | Native Experience | Integration of haptics and native iOS dark/light mode support. | P1 |
 
-### 3.4 Version 3: The Power Update
+## 3. Functional Requirements
+
+### 3.1 Version 1: Web App (The Minimalist MVP)
+...
+### 3.4 Version 3: The Power Update (Scope Expansion)
 | ID | Feature | Description | Priority |
 | :--- | :--- | :--- | :--- |
 | **F3.1** | Multimodal Input | Support for file and image uploads within the chat interface. | P1 |
