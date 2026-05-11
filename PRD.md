@@ -14,7 +14,7 @@ The app decouples the user interface from the model hosting, allowing users to r
 *   **v1:** A responsive web-based multi-thread chat interface connecting to an LM Studio instance via a hard-coded local IP.
 *   **v1.5:** Expansion to support MLX server (Apple Silicon optimized) and a backend toggle.
 *   **v2:** A native iOS application for mobility with automatic network discovery.
-*   **v3:** "Power Update" introducing multimodal inputs and user-configurable settings.
+*   **v3:** "Power Update" introducing multimodal inputs, user-configurable settings, and a native macOS app.
 
 ---
 
