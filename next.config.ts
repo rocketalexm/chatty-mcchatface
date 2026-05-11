@@ -5,7 +5,7 @@ const allowedOrigins = process.env.NEXT_PUBLIC_ALLOWED_ORIGINS
   : [];
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: [...allowedOrigins, '10.0.0.196'],
+  allowedDevOrigins: allowedOrigins,
 };
 
 export default nextConfig;
