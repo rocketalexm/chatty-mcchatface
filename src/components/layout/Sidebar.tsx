@@ -73,7 +73,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onNewChat, onSelectSession, ac
       </div>
 
       {/* Footer / Model Status */}
-      <div className="p-4 border-t border-glass-border glass">
+      <div className="p-4 glass">
         <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest text-foreground/40">
           <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
           <span>Local Model Active</span>

@@ -30,14 +30,14 @@ export const AdaptiveLayout: React.FC<AdaptiveLayoutProps> = ({ children, sideba
   return (
     <div className="flex h-[100dvh] w-full overflow-hidden bg-background text-foreground">
       {/* Desktop Sidebar */}
-      <aside className="hidden md:flex w-72 flex-col border-r border-glass-border glass h-full">
+      <aside className="hidden md:flex w-72 flex-col bg-foreground/5 glass h-full">
         {sidebar}
       </aside>
 
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col relative h-full overflow-hidden">
         {/* Mobile Header */}
-        <header className="md:hidden flex items-center justify-between p-4 border-b border-glass-border glass">
+        <header className="md:hidden flex items-center justify-between p-4 glass">
           <button
             onClick={() => setIsMobileMenuOpen(true)}
             className="p-2 hover:bg-foreground/10 rounded-lg transition-colors"
@@ -71,8 +71,8 @@ export const AdaptiveLayout: React.FC<AdaptiveLayoutProps> = ({ children, sideba
           />
 
           {/* Drawer */}
-          <aside className="absolute left-0 top-0 bottom-0 w-80 flex flex-col glass border-r border-glass-border shadow-2xl zen-fade-in">
-            <div className="flex items-center justify-between p-4 border-b border-glass-border">
+          <aside className="absolute left-0 top-0 bottom-0 w-80 flex flex-col glass shadow-2xl zen-fade-in">
+            <div className="flex items-center justify-between p-4">
               <div className="font-medium text-sm tracking-tight">Menu</div>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}

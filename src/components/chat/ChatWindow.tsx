@@ -98,7 +98,7 @@ export const ChatWindow: React.FC<{ activeSessionId: string | null }> = ({ activ
                 className={`max-w-[85%] md:max-w-[70%] px-4 py-3 rounded-2xl text-sm leading-relaxed transition-all duration-500 ${
                   msg.role === 'user'
                     ? 'bg-accent text-white rounded-tr-none shadow-lg shadow-accent/20'
-                    : 'glass border-glass-border rounded-tl-none text-foreground shadow-sm'
+                    : 'glass rounded-tl-none text-foreground shadow-sm'
                 }`}
               >
                 {msg.content ? (
@@ -118,14 +118,18 @@ export const ChatWindow: React.FC<{ activeSessionId: string | null }> = ({ activ
       </div>
 
       {/* Input Area */}
-      <div className="p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] md:pb-8 border-t border-glass-border glass flex-shrink-0">
+      <div className={`p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] md:pb-8 flex-shrink-0 transition-all duration-700 ease-in-out ${
+        session.messages.length === 0
+          ? '-translate-y-[42dvh] border-none bg-transparent'
+          : 'glass translate-y-0'
+      }`}>
         <form onSubmit={handleSend} className="max-w-3xl mx-auto relative">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Type a message..."
-            className="w-full bg-background/50 border border-glass-border focus:border-accent/40 rounded-full py-3 px-6 pr-12 focus:outline-none focus:ring-4 focus:ring-accent/10 shadow-md transition-all text-sm placeholder:text-foreground/30"
+            className="w-full bg-background/50 border border-foreground/20 focus:border-accent/40 rounded-full py-3 px-6 pr-12 focus:outline-none focus:ring-4 focus:ring-accent/10 shadow-md transition-all text-sm placeholder:text-foreground/30"
             disabled={isThinking}
           />
           <button
