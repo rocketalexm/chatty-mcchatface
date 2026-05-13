@@ -6,6 +6,11 @@ An ultra-minimalist, Apple-inspired web interface for interacting with Large Lan
 
 Chatty McChatface decouples the user interface from the model hosting, allowing you to run LLMs on a local computer while interacting with them via a lightweight, responsive web client. The focus is on "Zen" productivity—removing all cognitive friction and technical noise from the chat experience.
 
+<img width="1436" height="1052" alt="image" src="https://github.com/user-attachments/assets/f03d4cd7-d3ba-43c1-a61c-9a9cfee6f84b" />
+<img width="1436" height="1052" alt="image" src="https://github.com/user-attachments/assets/8f5f7c5a-7f01-4e89-b489-8f995735adec" />
+
+
+
 ## 🚀 Features (MVP)
 
 - **Minimalist UI:** High whitespace, glassmorphism effects, and a "Zen" empty state.
